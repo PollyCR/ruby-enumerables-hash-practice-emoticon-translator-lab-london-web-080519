@@ -28,6 +28,6 @@ result = emoticons["get_meaning"][meaning]
 if result
   result
 else
-  "Sorry, that meaning was not found"
+  "Sorry, that emoticon was not found"
 end
 end
