@@ -5,10 +5,12 @@ emoticons = {"get_meaning" => {},
 "get_emoticon" => {} }
 YAML.load_file(file_path).each do |meaning,emoticon|
   english, japanese = emoticon
-  library["get_meaning"][english] = japanese 
-  library
+  library["get_meaning"][japanese] = emoticon
+  library["get_emoticon"][english] = japanese 
+end 
+emoticons
 end
-load_library('./lib/emoticons.yml')
+
 
 def get_japanese_emoticon
   # code goes here
