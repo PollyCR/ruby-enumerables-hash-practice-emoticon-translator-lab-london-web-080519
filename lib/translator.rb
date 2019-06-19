@@ -6,8 +6,7 @@ emoticons = {"get_meaning" => {},
 YAML.load_file(file_path).each do |meaning,emoticon|
   english, japanese = emoticon
   emoticons["get_emoticon"][english] = japanese 
-  emoticons["get_meaning"][japanese] = emoticon
-
+  emoticons["get_meaning"][japanese] = english
 end 
 emoticons
 end
