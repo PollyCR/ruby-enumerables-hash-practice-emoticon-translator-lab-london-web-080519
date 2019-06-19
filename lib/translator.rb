@@ -23,5 +23,11 @@ end
 end 
 
 def get_english_meaning
-  # code goes here
+emoticons = load_library(file_path)
+result = emoticons["get_meaning"][meaning]
+if result
+  result
+else
+  "Sorry, that meaning was not found"
+end
 end
